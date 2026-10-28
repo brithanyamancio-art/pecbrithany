@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <li><a href="asociaciones.html">asociaciones</a></li>
+                    <li><a href="#">contactos</a></li>
+                    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    
+        <title>Cuadro Comparativo de las Emociones</title>
+    
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+    
+            body {
+                font-family: Arial, sans-serif;
+                background: linear-gradient(135deg, #e3f2fd, #fce4ec);
+                color: #333;
+                padding: 40px 20px;
+            }
+    
+            .contenedor {
+                max-width: 1200px;
+                margin: auto;
+            }
+    
+            h1 {
+                text-align: center;
+                color: #263238;
+                margin-bottom: 15px;
+                animation: aparecer 1s ease;
+            }
+    
+            .descripcion {
+                text-align: center;
+                margin-bottom: 30px;
+                color: #555;
+            }
+    
+            .tabla {
+                width: 100%;
+                border-collapse: collapse;
+                background-color: white;
+                border-radius: 15px;
+                overflow: hidden;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+                animation: subir 1s ease;
+            }
+    
+            .tabla th {
+                background: #37474f;
+                color: white;
+                padding: 18px;
+                font-size: 17px;
+            }
+    
+            .tabla td {
+                padding: 18px;
+                text-align: center;
+                border-bottom: 1px solid #ddd;
+                transition: all 0.3s ease;
+            }
+    
+            .tabla tr {
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+    
+            .tabla tbody tr:hover {
+                transform: scale(1.02);
+                box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            }
+    
+            .emocion {
+                font-weight: bold;
+                font-size: 18px;
+            }
+    
+            .alegria {
+                color: #f39c12;
+                border-left: 6px solid #f1c40f;
+            }
+    
+            .tristeza {
+                color: #2980b9;
+                border-left: 6px solid #3498db;
+            }
+    
+            .miedo {
+                color: #8e44ad;
+                border-left: 6px solid #9b59b6;
+            }
+    
+            .enojo {
+                color: #c0392b;
+                border-left: 6px solid #e74c3c;
+            }
+    
+            .sorpresa {
+                color: #16a085;
+                border-left: 6px solid #1abc9c;
+            }
+    
+            .asco {
+                color: #27ae60;
+                border-left: 6px solid #2ecc71;
+            }
+    
+            .barra {
+                width: 100%;
+                height: 12px;
+                background: #eee;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+    
+            .nivel {
+                height: 100%;
+                border-radius: 10px;
+                animation: crecer 1.5s ease;
+            }
+    
+            .nivel-alegria {
+                width: 90%;
+                background: #f1c40f;
+            }
+    
+            .nivel-tristeza {
+                width: 65%;
+                background: #3498db;
+            }
+    
+            .nivel-miedo {
+                width: 80%;
+                background: #9b59b6;
+            }
+    
+            .nivel-enojo {
+                width: 85%;
+                background: #e74c3c;
+            }
+    
+            .nivel-sorpresa {
+                width: 70%;
+                background: #1abc9c;
+            }
+    
+            .nivel-asco {
+                width: 60%;
+                background: #2ecc71;
+            }
+    
+            @keyframes aparecer {
+                from {
+                    opacity: 0;
+                    transform: translateY(-30px);
+                }
+    
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+    
+            @keyframes subir {
+                from {
+                    opacity: 0;
+                    transform: translateY(50px);
+                }
+    
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+    
+            @keyframes crecer {
+                from {
+                    width: 0;
+                }
+            }
+    
+            @media (max-width: 768px) {
+                .tabla {
+                    font-size: 13px;
+                }
+    
+                .tabla th,
+                .tabla td {
+                    padding: 10px;
+                }
+    
+                h1 {
+                    font-size: 25px;
+                }
+            }
+        </style>
+    </head>
+    
+    <body>
+    
+        <div class="contenedor">
+    
+            <h1>Cuadro Comparativo de las Emociones</h1>
+    
+            <p class="descripcion">
+                Comparación de las principales emociones, sus características,
+                causas y formas de expresión.
+            </p>
+    
+            <table class="tabla">
+    
+                <thead>
+                    <tr>
+                        <th>Emoción</th>
+                        <th>Características</th>
+                        <th>Causas comunes</th>
+                        <th>Expresión</th>
+                        <th>Intensidad</th>
+                    </tr>
+                </thead>
+    
+                <tbody>
+    
+                    <tr class="alegria">
+                        <td class="emocion">Alegría</td>
+                        <td>Sensación de bienestar y satisfacción.</td>
+                        <td>Logros, buenas noticias y momentos agradables.</td>
+                        <td>Sonrisa, entusiasmo y energía.</td>
+                        <td>
+                            <div class="barra">
+                                <div class="nivel nivel-alegria"></div>
+                            </div>
+                        </td>
+                    </tr>
+    
+                    <tr class="tristeza">
+                        <td class="emocion">Tristeza</td>
+                        <td>Sensación de pérdida, desánimo o dolor emocional.</td>
+                        <td>Pérdidas, decepciones o situaciones difíciles.</td>
+                        <td>Llanto, aislamiento y poca energía.</td>
+                        <td>
+                            <div class="barra">
+                                <div class="nivel nivel-tristeza"></div>
+                            </div>
+                        </td>
+                    </tr>
+    
+                    <tr class="miedo">
+                        <td class="emocion">Miedo</td>
+                        <td>Respuesta ante una amenaza o peligro.</td>
+                        <td>Peligro, incertidumbre o situaciones desconocidas.</td>
+                        <td>Tensión, nerviosismo y deseo de escapar.</td>
+                        <td>
+                            <div class="barra">
+                                <div class="nivel nivel-miedo"></div>
+                            </div>
+                        </td>
+                    </tr>
+    
+                    <tr class="enojo">
+                        <td class="emocion">Enojo</td>
+                        <td>Respuesta ante una injusticia, frustración o provocación.</td>
+                        <td>Conflictos, obstáculos o situaciones injustas.</td>
+                        <td>Voz elevada, tensión y gestos fuertes.</td>
+                        <td>
+                            <div class="barra">
+                                <div class="nivel nivel-enojo"></div>
+                            </div>
+                        </td>
+                    </tr>
+    
+                    <tr class="sorpresa">
+                        <td class="emocion">Sorpresa</td>
+                        <td>Reacción ante algo inesperado.</td>
+                        <td>Noticias, acontecimientos inesperados o cambios repentinos.</td>
+                        <td>Atención inmediata y reacción rápida.</td>
+                        <td>
+                            <div class="barra">
+                                <div class="nivel nivel-sorpresa"></div>
+                            </div>
+                        </td>
+                    </tr>
+    
+                    <tr class="asco">
+                        <td class="emocion">Asco</td>
+                        <td>Rechazo hacia algo desagradable.</td>
+                        <td>Malos olores, alimentos desagradables o situaciones repulsivas.</td>
+                        <td>Rechazo, alejamiento y gestos de desagrado.</td>
+                        <td>
+                            <div class="barra">
+                                <div class="nivel nivel-asco"></div>
+                            </div>
+                        </td>
+                    </tr>
+    
+                </tbody>
+    
+            </table>
+    
+        </div>
+    
+    </body>
+    </html>
+    
+    
+    
+</body>
+</html>

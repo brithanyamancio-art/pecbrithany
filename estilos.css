@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+    
+    body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #eedaee;
+    color: #db47bb;
+    line-height: 1.6;
+    background-color: #ebcee4;
+    background-position: center;
+    background-size: 0;
+    }
+    
+    /* Header */
+    header {
+    background-color: #eb62b6;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    }
+    nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    }
+    nav ul li {
+    margin: 0 15px;
+    }
+    nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    }
+    /* Main y Aside */
+    main {
+    width: 70%;
+    float: left;
+    padding: 20px;
+    color: #de42e4;
+    
+    }
+    aside {
+    width: 30%;
+    float: right;
+    background-color: #eee;
+    padding: 20px;
+    color: #ee70b5;
+    }
+    /* Footer */
+    footer {
+    clear: both;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    }
+
+.lora-uniquifier {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+aside{
+  clear: both;
+  background-color: rgb(149, 156, 241);
+}
